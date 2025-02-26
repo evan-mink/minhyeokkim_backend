@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    group:
+      local: local, common
+      prod: prod, common
+
+---
+spring:
+  config:
+    activate:
+      on-profile: common
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+springdoc:
+  swagger-ui:
+    doc-expansion: none
+    groups-order: DESC
+    tags-sorter: alpha
+    operationsSorter: alpha
+    defaultModelsExpandDepth: -1
+    syntax-highlight:
+      activated: false

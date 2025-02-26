@@ -1,0 +1,494 @@
+드라이브 볼륨에 대한 폴더 경로의 목록입니다.
+볼륨 일련 번호는 881E-1D7B입니다.
+D:.
+|   .gitattributes
+|   .gitignore
+|   build.gradle
+|   gradlew
+|   gradlew.bat
+|   project-structure.txt
+|   settings.gradle
+|   
++---.gradle
+|   |   file-system.probe
+|   |   
+|   +---8.5
+|   |   |   gc.properties
+|   |   |   
+|   |   +---checksums
+|   |   |       checksums.lock
+|   |   |       md5-checksums.bin
+|   |   |       sha1-checksums.bin
+|   |   |       
+|   |   +---dependencies-accessors
+|   |   |       dependencies-accessors.lock
+|   |   |       gc.properties
+|   |   |       
+|   |   +---executionHistory
+|   |   |       executionHistory.bin
+|   |   |       executionHistory.lock
+|   |   |       
+|   |   +---fileChanges
+|   |   |       last-build.bin
+|   |   |       
+|   |   +---fileHashes
+|   |   |       fileHashes.bin
+|   |   |       fileHashes.lock
+|   |   |       resourceHashesCache.bin
+|   |   |       
+|   |   \---vcsMetadata
+|   +---buildOutputCleanup
+|   |       buildOutputCleanup.lock
+|   |       cache.properties
+|   |       outputFiles.bin
+|   |       
+|   \---vcs-1
+|           gc.properties
+|           
++---.idea
+|   |   .gitignore
+|   |   checkstyle-idea.xml
+|   |   compiler.xml
+|   |   dataSources.local.xml
+|   |   dataSources.xml
+|   |   encodings.xml
+|   |   gradle.xml
+|   |   jarRepositories.xml
+|   |   libraries-with-intellij-classes.xml
+|   |   misc.xml
+|   |   remittance.iml
+|   |   sqldialects.xml
+|   |   vcs.xml
+|   |   workspace.xml
+|   |   
+|   \---dataSources
+|       |   8e71febe-3734-4a68-b4b2-bdcd99c0add1.xml
+|       |   
+|       \---8e71febe-3734-4a68-b4b2-bdcd99c0add1
+|           \---storage_v2
+|               \---_src_
+|                   \---schema
+|                           information_schema.FNRwLQ.meta
+|                           performance_schema.kIw0nw.meta
+|                           
++---build
+|   |   resolvedMainClassName
+|   |   
+|   +---classes
+|   |   \---java
+|   |       +---main
+|   |       |   \---com
+|   |       |       \---example
+|   |       |           \---remittance
+|   |       |               |   RemittanceApplication.class
+|   |       |               |   
+|   |       |               +---account
+|   |       |               |   +---controller
+|   |       |               |   |       AccountController.class
+|   |       |               |   |       
+|   |       |               |   +---model
+|   |       |               |   |       AccountDto$AccountDtoBuilder.class
+|   |       |               |   |       AccountDto.class
+|   |       |               |   |       
+|   |       |               |   \---service
+|   |       |               |           AccountService.class
+|   |       |               |           
+|   |       |               +---bank
+|   |       |               |   +---controller
+|   |       |               |   |       BankController.class
+|   |       |               |   |       
+|   |       |               |   +---model
+|   |       |               |   |       BankDto$BankDtoBuilder.class
+|   |       |               |   |       BankDto.class
+|   |       |               |   |       
+|   |       |               |   \---service
+|   |       |               |           BankService.class
+|   |       |               |           
+|   |       |               +---common
+|   |       |               |   +---batch
+|   |       |               |   |       BatchComponent.class
+|   |       |               |   |       
+|   |       |               |   +---config
+|   |       |               |   |       SwaggerConfig.class
+|   |       |               |   |       
+|   |       |               |   +---converter
+|   |       |               |   |       AESConverter.class
+|   |       |               |   |       
+|   |       |               |   +---model
+|   |       |               |   |   +---base
+|   |       |               |   |   |       BaseApiRequest$BaseApiRequestBuilder.class
+|   |       |               |   |   |       BaseApiRequest$BaseApiRequestBuilderImpl.class
+|   |       |               |   |   |       BaseApiRequest.class
+|   |       |               |   |   |       BaseApiResponse$BaseApiResponseBuilder.class
+|   |       |               |   |   |       BaseApiResponse$BaseApiResponseBuilderImpl.class
+|   |       |               |   |   |       BaseApiResponse.class
+|   |       |               |   |   |       BaseEntity$BaseEntityBuilder.class
+|   |       |               |   |   |       BaseEntity.class
+|   |       |               |   |   |       
+|   |       |               |   |   +---entity
+|   |       |               |   |   |   |   Account$AccountBuilder.class
+|   |       |               |   |   |   |   Account.class
+|   |       |               |   |   |   |   AccountLimit$AccountLimitBuilder.class
+|   |       |               |   |   |   |   AccountLimit.class
+|   |       |               |   |   |   |   AccountTransaction$AccountTransactionBuilder.class
+|   |       |               |   |   |   |   AccountTransaction.class
+|   |       |               |   |   |   |   CodeBank$CodeBankBuilder.class
+|   |       |               |   |   |   |   CodeBank.class
+|   |       |               |   |   |   |   CodeTransaction$CodeTransactionBuilder.class
+|   |       |               |   |   |   |   CodeTransaction.class
+|   |       |               |   |   |   |   TransactionFee$TransactionFeeBuilder.class
+|   |       |               |   |   |   |   TransactionFee.class
+|   |       |               |   |   |   |   
+|   |       |               |   |   |   \---id
+|   |       |               |   |   |           AccountLimitId$AccountLimitIdBuilder.class
+|   |       |               |   |   |           AccountLimitId.class
+|   |       |               |   |   |           
+|   |       |               |   |   \---type
+|   |       |               |   |           CommonType$TransactionCode.class
+|   |       |               |   |           CommonType.class
+|   |       |               |   |           
+|   |       |               |   +---repository
+|   |       |               |   |       AccountLimitRepository.class
+|   |       |               |   |       AccountRepository.class
+|   |       |               |   |       AccountTransactionRepository.class
+|   |       |               |   |       CodeBankRepository.class
+|   |       |               |   |       CodeTransactionRepository.class
+|   |       |               |   |       TransactionFeeRepository.class
+|   |       |               |   |       
+|   |       |               |   +---service
+|   |       |               |   |       CodeService.class
+|   |       |               |   |       
+|   |       |               |   \---util
+|   |       |               |           DateUtil.class
+|   |       |               |           EncryptUtil.class
+|   |       |               |           RandomStringUtil.class
+|   |       |               |           
+|   |       |               \---transaction
+|   |       |                   +---controller
+|   |       |                   |       TransactionController.class
+|   |       |                   |       
+|   |       |                   +---model
+|   |       |                   |       TransactionDto$Response$ResponseBuilder.class
+|   |       |                   |       TransactionDto$Response$ResponseBuilderImpl.class
+|   |       |                   |       TransactionDto$Response.class
+|   |       |                   |       TransactionDto$Transaction$TransactionBuilder.class
+|   |       |                   |       TransactionDto$Transaction.class
+|   |       |                   |       TransactionDto$TransactionDtoBuilder.class
+|   |       |                   |       TransactionDto$TransactionRequest$TransactionRequestBuilder.class
+|   |       |                   |       TransactionDto$TransactionRequest$TransactionRequestBuilderImpl.class
+|   |       |                   |       TransactionDto$TransactionRequest.class
+|   |       |                   |       TransactionDto$TransferRequest$TransferRequestBuilder.class
+|   |       |                   |       TransactionDto$TransferRequest$TransferRequestBuilderImpl.class
+|   |       |                   |       TransactionDto$TransferRequest.class
+|   |       |                   |       TransactionDto.class
+|   |       |                   |       
+|   |       |                   \---service
+|   |       |                           TransactionService$1.class
+|   |       |                           TransactionService.class
+|   |       |                           
+|   |       \---test
+|   |           \---com
+|   |               \---example
+|   |                   \---remittance
+|   |                       |   RemittanceApplicationTests.class
+|   |                       |   
+|   |                       +---integration
+|   |                       |   +---account
+|   |                       |   |   \---controller
+|   |                       |   |           AccountControllerTest$1.class
+|   |                       |   |           AccountControllerTest.class
+|   |                       |   |           
+|   |                       |   +---bank
+|   |                       |   |   \---controller
+|   |                       |   |           BankControllerTest$1.class
+|   |                       |   |           BankControllerTest.class
+|   |                       |   |           
+|   |                       |   +---common
+|   |                       |   |   +---repository
+|   |                       |   |   |       AccountLimitRepositoryTest.class
+|   |                       |   |   |       
+|   |                       |   |   +---service
+|   |                       |   |   |       CodeServiceTest.class
+|   |                       |   |   |       
+|   |                       |   |   \---util
+|   |                       |   |           EncryptUtilTest.class
+|   |                       |   |           
+|   |                       |   \---transaction
+|   |                       |       \---controller
+|   |                       |               TransactionControllerTest$1.class
+|   |                       |               TransactionControllerTest$2.class
+|   |                       |               TransactionControllerTest$3.class
+|   |                       |               TransactionControllerTest$4.class
+|   |                       |               TransactionControllerTest.class
+|   |                       |               
+|   |                       \---unit
+|   |                           +---account
+|   |                           |   \---service
+|   |                           |           AccountServiceTest.class
+|   |                           |           
+|   |                           +---bank
+|   |                           |   \---service
+|   |                           |           BankServiceTest.class
+|   |                           |           
+|   |                           +---common
+|   |                           |   \---util
+|   |                           |           DateUtilTest.class
+|   |                           |           RandomStringUtilTest.class
+|   |                           |           
+|   |                           \---transaction
+|   |                               \---service
+|   |                                       TransactionServiceTest.class
+|   |                                       
+|   +---generated
+|   |   \---sources
+|   |       +---annotationProcessor
+|   |       |   \---java
+|   |       |       +---main
+|   |       |       \---test
+|   |       \---headers
+|   |           \---java
+|   |               +---main
+|   |               \---test
+|   +---libs
+|   |       remittance-0.0.1-SNAPSHOT-plain.jar
+|   |       remittance-0.0.1-SNAPSHOT.jar
+|   |       
+|   +---reports
+|   |   \---tests
+|   |       \---test
+|   |           |   index.html
+|   |           |   
+|   |           +---classes
+|   |           |       com.example.remittance.integration.account.controller.AccountControllerTest.html
+|   |           |       com.example.remittance.integration.bank.controller.BankControllerTest.html
+|   |           |       com.example.remittance.integration.common.repository.AccountLimitRepositoryTest.html
+|   |           |       com.example.remittance.integration.common.service.CodeServiceTest.html
+|   |           |       com.example.remittance.integration.common.util.EncryptUtilTest.html
+|   |           |       com.example.remittance.integration.transaction.controller.TransactionControllerTest.html
+|   |           |       com.example.remittance.RemittanceApplicationTests.html
+|   |           |       com.example.remittance.unit.account.service.AccountServiceTest.html
+|   |           |       com.example.remittance.unit.bank.service.BankServiceTest.html
+|   |           |       com.example.remittance.unit.common.util.DateUtilTest.html
+|   |           |       com.example.remittance.unit.common.util.RandomStringUtilTest.html
+|   |           |       com.example.remittance.unit.transaction.service.TransactionServiceTest.html
+|   |           |       
+|   |           +---css
+|   |           |       base-style.css
+|   |           |       style.css
+|   |           |       
+|   |           +---js
+|   |           |       report.js
+|   |           |       
+|   |           \---packages
+|   |                   com.example.remittance.html
+|   |                   com.example.remittance.integration.account.controller.html
+|   |                   com.example.remittance.integration.bank.controller.html
+|   |                   com.example.remittance.integration.common.repository.html
+|   |                   com.example.remittance.integration.common.service.html
+|   |                   com.example.remittance.integration.common.util.html
+|   |                   com.example.remittance.integration.transaction.controller.html
+|   |                   com.example.remittance.unit.account.service.html
+|   |                   com.example.remittance.unit.bank.service.html
+|   |                   com.example.remittance.unit.common.util.html
+|   |                   com.example.remittance.unit.transaction.service.html
+|   |                   
+|   +---resources
+|   |   \---main
+|   |           application-local.yml
+|   |           application-prod.yml
+|   |           application.yml
+|   |           
+|   +---test-results
+|   |   \---test
+|   |       |   TEST-com.example.remittance.integration.account.controller.AccountControllerTest.xml
+|   |       |   TEST-com.example.remittance.integration.bank.controller.BankControllerTest.xml
+|   |       |   TEST-com.example.remittance.integration.common.repository.AccountLimitRepositoryTest.xml
+|   |       |   TEST-com.example.remittance.integration.common.service.CodeServiceTest.xml
+|   |       |   TEST-com.example.remittance.integration.common.util.EncryptUtilTest.xml
+|   |       |   TEST-com.example.remittance.integration.transaction.controller.TransactionControllerTest.xml
+|   |       |   TEST-com.example.remittance.RemittanceApplicationTests.xml
+|   |       |   TEST-com.example.remittance.unit.account.service.AccountServiceTest.xml
+|   |       |   TEST-com.example.remittance.unit.bank.service.BankServiceTest.xml
+|   |       |   TEST-com.example.remittance.unit.common.util.DateUtilTest.xml
+|   |       |   TEST-com.example.remittance.unit.common.util.RandomStringUtilTest.xml
+|   |       |   TEST-com.example.remittance.unit.transaction.service.TransactionServiceTest.xml
+|   |       |   
+|   |       \---binary
+|   |               output.bin
+|   |               output.bin.idx
+|   |               results.bin
+|   |               
+|   \---tmp
+|       +---bootJar
+|       |       MANIFEST.MF
+|       |       
+|       +---compileJava
+|       |       previous-compilation-data.bin
+|       |       
+|       +---compileTestJava
+|       |       previous-compilation-data.bin
+|       |       
+|       +---jar
+|       |       MANIFEST.MF
+|       |       
+|       \---test
++---docker
+|   |   docker-compose.yml
+|   |   remittance.env
+|   |   
+|   +---app
+|   |       Dockerfile
+|   |       run.sh
+|   |       
+|   \---db
+|       |   my.cnf
+|       |   
+|       \---initdb.d
+|               init.sql
+|               
++---docs
+|       remittance_erd.png
+|       remittance_테이블명세서.xlsx
+|       
++---gradle
+|   \---wrapper
+|           gradle-wrapper.jar
+|           gradle-wrapper.properties
+|           
+\---src
+    +---main
+    |   +---java
+    |   |   \---com
+    |   |       \---example
+    |   |           \---remittance
+    |   |               |   RemittanceApplication.java
+    |   |               |   
+    |   |               +---account
+    |   |               |   +---controller
+    |   |               |   |       AccountController.java
+    |   |               |   |       
+    |   |               |   +---model
+    |   |               |   |       AccountDto.java
+    |   |               |   |       
+    |   |               |   \---service
+    |   |               |           AccountService.java
+    |   |               |           
+    |   |               +---bank
+    |   |               |   +---controller
+    |   |               |   |       BankController.java
+    |   |               |   |       
+    |   |               |   +---model
+    |   |               |   |       BankDto.java
+    |   |               |   |       
+    |   |               |   \---service
+    |   |               |           BankService.java
+    |   |               |           
+    |   |               +---common
+    |   |               |   +---batch
+    |   |               |   |       BatchComponent.java
+    |   |               |   |       
+    |   |               |   +---config
+    |   |               |   |       SwaggerConfig.java
+    |   |               |   |       
+    |   |               |   +---converter
+    |   |               |   |       AESConverter.java
+    |   |               |   |       
+    |   |               |   +---model
+    |   |               |   |   +---base
+    |   |               |   |   |       BaseApiRequest.java
+    |   |               |   |   |       BaseApiResponse.java
+    |   |               |   |   |       BaseEntity.java
+    |   |               |   |   |       
+    |   |               |   |   +---entity
+    |   |               |   |   |   |   Account.java
+    |   |               |   |   |   |   AccountLimit.java
+    |   |               |   |   |   |   AccountTransaction.java
+    |   |               |   |   |   |   CodeBank.java
+    |   |               |   |   |   |   CodeTransaction.java
+    |   |               |   |   |   |   TransactionFee.java
+    |   |               |   |   |   |   
+    |   |               |   |   |   \---id
+    |   |               |   |   |           AccountLimitId.java
+    |   |               |   |   |           
+    |   |               |   |   \---type
+    |   |               |   |           CommonType.java
+    |   |               |   |           
+    |   |               |   +---repository
+    |   |               |   |       AccountLimitRepository.java
+    |   |               |   |       AccountRepository.java
+    |   |               |   |       AccountTransactionRepository.java
+    |   |               |   |       CodeBankRepository.java
+    |   |               |   |       CodeTransactionRepository.java
+    |   |               |   |       TransactionFeeRepository.java
+    |   |               |   |       
+    |   |               |   +---service
+    |   |               |   |       CodeService.java
+    |   |               |   |       
+    |   |               |   \---util
+    |   |               |           DateUtil.java
+    |   |               |           EncryptUtil.java
+    |   |               |           RandomStringUtil.java
+    |   |               |           
+    |   |               \---transaction
+    |   |                   +---controller
+    |   |                   |       TransactionController.java
+    |   |                   |       
+    |   |                   +---model
+    |   |                   |       TransactionDto.java
+    |   |                   |       
+    |   |                   \---service
+    |   |                           TransactionService.java
+    |   |                           
+    |   \---resources
+    |           application-local.yml
+    |           application-prod.yml
+    |           application.yml
+    |           
+    \---test
+        \---java
+            \---com
+                \---example
+                    \---remittance
+                        |   RemittanceApplicationTests.java
+                        |   
+                        +---integration
+                        |   +---account
+                        |   |   \---controller
+                        |   |           AccountControllerTest.java
+                        |   |           
+                        |   +---bank
+                        |   |   \---controller
+                        |   |           BankControllerTest.java
+                        |   |           
+                        |   +---common
+                        |   |   +---repository
+                        |   |   |       AccountLimitRepositoryTest.java
+                        |   |   |       
+                        |   |   +---service
+                        |   |   |       CodeServiceTest.java
+                        |   |   |       
+                        |   |   \---util
+                        |   |           EncryptUtilTest.java
+                        |   |           
+                        |   \---transaction
+                        |       \---controller
+                        |               TransactionControllerTest.java
+                        |               
+                        \---unit
+                            +---account
+                            |   \---service
+                            |           AccountServiceTest.java
+                            |           
+                            +---bank
+                            |   \---service
+                            |           BankServiceTest.java
+                            |           
+                            +---common
+                            |   \---util
+                            |           DateUtilTest.java
+                            |           RandomStringUtilTest.java
+                            |           
+                            \---transaction
+                                \---service
+                                        TransactionServiceTest.java
+                                        

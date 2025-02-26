@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: remittance_db
+    env_file:
+      - ./remittance.env
+    environment:
+      TZ: Asia/Seoul
+    ports:
+      - "33060:3306"
+    volumes:
+      - ./db/my.cnf:/etc/mysql/my.cnf
+      - ./db/initdb.d:/docker-entrypoint-initdb.d
+    command: ["/bin/sh", "-c", "chmod 644 /etc/mysql/my.cnf && exec docker-entrypoint.sh mysqld"]
+    networks:
+      - remittance_network
+
+  app:
+    container_name: remittance_app
+    env_file:
+      - ./remittance.env
+    build:
+      context: ..
+      dockerfile: ./docker/app/Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+    networks:
+      - remittance_network
+
+networks:
+  remittance_network:

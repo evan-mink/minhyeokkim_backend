@@ -1,0 +1,24 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://127.0.0.1:33060/remittance?useUnicode=true&characterEncoding=utf8'
+    username: 'evan'
+    password: 'evan123'
+    hikari:
+      connection-test-query: SELECT 1
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+remittance:
+  secret-key: remittance!@#$%^
+
+server:
+  port: 8001

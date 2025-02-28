@@ -12,6 +12,7 @@ import lombok.experimental.SuperBuilder;
 import com.example.remittance.common.util.DateUtil;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
 
 /**
  * API response wrapper class
@@ -39,6 +40,7 @@ public class BaseApiResponse<T> {
 	private String message;
 
 	@Schema(description = "json stringify string")
+	@Valid
 	private T data;
 
 	private static final String DEFAULT_OK_MESSAGE = "OK";
